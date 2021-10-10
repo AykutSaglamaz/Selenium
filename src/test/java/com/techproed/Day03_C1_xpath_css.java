@@ -31,4 +31,9 @@ public class Day03_C1_xpath_css {
                 click();
 
     }
+
+    @After
+    public void tearDown(){
+        driver.close();
+    }
 }

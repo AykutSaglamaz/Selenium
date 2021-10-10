@@ -5,15 +5,15 @@ public class Notes01 {
 *Navigations
 	get(), navigate(), to(), back(), forward (), refresh()
 *Common Driver methods
-	getTitle(), getCurrentURL(), getPageSoure();
+	getTitle(), getCurrentURL(), getPageSource();
 *Closing driver
 	close(),quit()
 *to maximize a windows
 	driver.manage().window(),maximize()
 *wait
 	Thread.sleep(5000); --> comes from Java wait 4 second hard wait() 5 second for all conditions even if no need for wait
-	NOTE: testers should now use this wait, cause it causes additional unnecessary wait
-	Instead we will use IMPLICIT AND EXPLICIT WAIT we will learn later
+	NOTE: testers should now use this wait, because it causes additional unnecessary wait
+	Instead we will use IMPLICITly AND EXPLICIT WAIT we will learn later
 MAVEN :
 	Java project build tool. It makes project development and deployment easy
 POM.XML

@@ -14,7 +14,7 @@ Value : email, form-control,.....
 XPATH FOR THIS ELEMENT : USE ANY OF THEM
 //input[@type='email'];
 //input[@class='form-control'];
-//input[@placegolder='Email'];
+//input[@placeholder='Email'];
 //input[@data-test='email'];
 //input[@name='session[email]'];
 //input[@id='session_email'];

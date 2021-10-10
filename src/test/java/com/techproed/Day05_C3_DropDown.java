@@ -65,6 +65,7 @@ public class Day05_C3_DropDown {
 //5.Create method printFirstSelectedOptionTest Print first selected option
     @Test
     public void printFirstSelectedOptionTest(){
+
         WebElement dropdown = driver.findElement(By.id("dropdown"));
         Select select = new Select(dropdown);
         WebElement firstSelectedOption = select.getFirstSelectedOption();

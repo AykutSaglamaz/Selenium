@@ -2,6 +2,7 @@ package com.techproed;
 
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -40,6 +41,7 @@ public class Day05_C2_RadioButton {
         driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(faker.name().firstName());
         driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys(faker.name().lastName());
         driver.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys(faker.internet().emailAddress());
+        driver.findElement(By.xpath("//input[@name='reg_email_confirmation__']")).sendKeys(faker.internet().emailAddress());
         driver.findElement(By.xpath("//input[@name='reg_passwd__']")).sendKeys(faker.internet().password());
 
         //Oct 10 1990
@@ -66,8 +68,11 @@ public class Day05_C2_RadioButton {
         }
         Thread.sleep(1000);
         driver.findElement(By.xpath("//button[@name='websubmit']")).click();
-//
-//
+
+    }
+    @After
+    public void tearDown(){
+        driver.close();
     }
 
 }

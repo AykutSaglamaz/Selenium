@@ -78,7 +78,8 @@ public void setUp() {
            Assert.assertEquals("New Window",driver.findElement(By.xpath("//h3[.='New Window']")).getText());
 
 
-           //Getting window 2 handle/ Since driver is on window 2, this returns window 2 handle
+           //Getting window 2 handle/ Since driver is on window 2,
+            // this returns window 2 handle
 
             String window2Handle = driver.getWindowHandle();
 

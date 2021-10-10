@@ -15,7 +15,7 @@ options.selectByVisibleText(“Watch”);
  select.selectByVisibleText("Option 1");
 
 *****getOptions(); returns all dropdown options as List<WebElement>
- List<WebElement> allOption = select.getOptions();
+ List<WebElement> allOptions = select.getOptions();
 
 *****getFirstSelectedOption(); returns the first selected option from a dropdown
  WebElement firstSelectedOption = select.getFirstSelectedOption();

@@ -35,10 +35,7 @@ public class Day02_C3_Locators {
         driver.manage().window().maximize();
 
     }
-    @After
-    public void tearDown(){
-//        driver.close();
-    }
+
     @Test
     public void locators(){
         driver.get("http://a.testaddressbook.com/sign_in");
@@ -89,7 +86,7 @@ public class Day02_C3_Locators {
     - linkText is safer, since you have to put the original text
  */
        // Find the number of total link on the page
-        //Links are created by a tag, so we can find all links by finding all elements with a tag
+        //Links are created by 'a' tag, so we can find all links by finding all elements with 'a' tag
         List<WebElement> allLinks= driver.findElements(By.tagName("a"));
         int linkSize = allLinks.size();
         System.out.println("The size of all Links is : "+linkSize);
@@ -103,9 +100,9 @@ public class Day02_C3_Locators {
                                     equals("http://a.testaddressbook.com/sign_in");
         Assert.assertTrue(isLoggedOut);
 
-
-
-
-
+    }
+    @After
+    public void tearDown(){
+        driver.close();
     }
 }

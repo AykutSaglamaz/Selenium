@@ -46,7 +46,7 @@ public class Day06_C2_IFrame {
 //        driver.switchTo().frame(0);
 
         //2.way Switching iframe by id/name
-    //    This iframe has id, then I compass value of id and switch to the iframe
+    //    This iframe has id, then I can pass value of id and switch to the iframe
        /*  <iframe
                 id="mce_0_ifr"
         frameborder="0"
@@ -65,7 +65,7 @@ public class Day06_C2_IFrame {
         //Note //p element is inside the iframe
         WebElement textbox = driver.findElement(By.xpath("//p"));
  //    Delete the text in the text box
-        //clear() -> delete the existing text
+        //clear() -> deleting the existing text
         textbox.clear();
 //    Type “This text box is inside the iframe”
         textbox.
