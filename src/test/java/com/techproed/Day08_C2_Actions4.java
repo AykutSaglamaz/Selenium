@@ -1,5 +1,6 @@
 package com.techproed;
 
+import com.techproed.utilities.TestBase;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -16,16 +17,17 @@ Go to amazon
 Scroll the page down
 Scroll the page up
  */
-public class Day08_C2_Actions4 {
-    WebDriver driver;
-
-    @Before
-    public void setUp(){
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-
-    }
+public class Day08_C2_Actions4 extends TestBase {
+    //Now that we used TESTBASE, we do not use before and after method
+//    WebDriver driver;
+//
+//    @Before
+//    public void setUp(){
+//        WebDriverManager.chromedriver().setup();
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//
+//    }
     @Test
     public void scrollUpDown() throws InterruptedException {
 
@@ -54,9 +56,9 @@ public class Day08_C2_Actions4 {
 
 
     }
-@After
-    public void tearDown(){
-        driver.close();
-}
+//@After
+//    public void tearDown(){
+//        driver.close();
+//}
 
 }

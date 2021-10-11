@@ -1,5 +1,6 @@
 package com.techproed;
 
+import com.techproed.utilities.TestBase;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
@@ -18,16 +19,17 @@ Go to google/amazon
 Send iPhone X prices => convert small letter capital vice versa.
 Highlight the search box by double clicking
  */
-public class Day08_C1_Actions3 {
-    WebDriver driver;
+public class Day08_C1_Actions3 extends TestBase {
+    //Now that we used TESTBASE, we do not use before and after method
+//    WebDriver driver;
 
-    @Before
-    public void setUp(){
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-
-    }
+//    @Before
+//    public void setUp(){
+//        WebDriverManager.chromedriver().setup();
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//
+//    }
     @Test
     public void keyUpDown(){
         driver.get("https://www.google.com");
@@ -50,10 +52,10 @@ public class Day08_C1_Actions3 {
     }
 
 
-    @After
-    public void tearDown(){
-   //     driver.close();
-
-    }
+//    @After
+//    public void tearDown(){
+//   //     driver.close();
+//
+//    }
 
 }
