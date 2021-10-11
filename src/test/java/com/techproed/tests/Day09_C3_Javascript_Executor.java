@@ -31,11 +31,12 @@ public class Day09_C3_Javascript_Executor extends TestBase {
         * Given user is on the application url
         * Then verify the text "Recent Blog" is on the page
         */
-        //We will scroll down to this element
-        WebElement resentBlog = driver.findElement(By.xpath("//*[.='Recent Blog']"));
 
         //Creating javascript executor object
         JavascriptExecutor je = (JavascriptExecutor) driver;
+
+        //We will scroll down to this element
+        WebElement resentBlog = driver.findElement(By.xpath("//*[.='Recent Blog']"));
 
         //Scrolling down to the element using scrollIntoView(true) method
         je.executeScript("arguments[0].scrollIntoView(true);",resentBlog);
