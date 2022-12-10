@@ -53,7 +53,6 @@ public class Day05_C1_CheckBox {
         Assert.assertTrue(checkbox1.isSelected());
         Assert.assertTrue(checkbox2.isSelected());
 
-
     }
     @After
     public void tearDown(){

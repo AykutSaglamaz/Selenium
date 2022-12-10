@@ -41,6 +41,7 @@ public class Day05_C2_RadioButton {
         driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(faker.name().firstName());
         driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys(faker.name().lastName());
         driver.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys(faker.internet().emailAddress());
+
         driver.findElement(By.xpath("//input[@name='reg_email_confirmation__']")).sendKeys(faker.internet().emailAddress());
         driver.findElement(By.xpath("//input[@name='reg_passwd__']")).sendKeys(faker.internet().password());
 

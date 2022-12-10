@@ -27,11 +27,5 @@ For example,  //input[@class='form-control'] return username and password elemen
 
 NOTE : If there are multiple match, findElement will give the first element by default.
 
-
-
-
-
-
-
      */
 }
