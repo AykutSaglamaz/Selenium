@@ -18,7 +18,7 @@ public class AccountCreationTest {
     /*
     ENTER ALL REQUIRED FIELDS AND VERIFY THE ACCOUNT CREATION IS SUCCESSFUL
 1. Create a class SignInHomework
-2. Go to http://automationpractice.com/index.php
+2. Go to https://www.automationexercise.com/
 3. Click on sign in link
 4.Send your email and click on create an account button
 5.Verify the Text : CREATE AN ACCOUNT
