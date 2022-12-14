@@ -141,8 +141,9 @@ public class AccountCreationTest {
             driver.findElement(By.xpath("//*[@id='submitAccount']")).click();
 //20. Then verify MY ACCOUNT is displayed on the home page-SEE BELOW IMAGE
           WebElement myAccount =  driver.findElement(By.linkText("My account"));
+
 //            Assert.assertEquals("MY ACCOUNT", myAccount.getText());
-            Assert.assertTrue(myAccount.isDisplayed());
+            Assert.assertTrue(myAccount.isDisplayed());//isDisplayed check if an element occur in webpage
         }
 
     @After
