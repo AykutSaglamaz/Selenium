@@ -67,7 +67,6 @@ WebDriver driver;
       String  result2 = driver.findElement(By.xpath("//p[@id='result']")).getText();
       Assert.assertEquals("You clicked: Cancel", result2);
 
-
     }
     @Test
     public void sendKeys(){

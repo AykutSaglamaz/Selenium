@@ -139,7 +139,7 @@ public class AccountCreationTest {
             driver.findElement(By.xpath("//input[@id ='alias']")).sendKeys(faker.address().fullAddress());
 //27. Click Register
             driver.findElement(By.xpath("//*[@id='submitAccount']")).click();
-//20. Then verify MY ACCOUNT is displayed on the home page-SEE BELOW IMAGE
+//28. Then verify MY ACCOUNT is displayed on the home page-SEE BELOW IMAGE
           WebElement myAccount =  driver.findElement(By.linkText("My account"));
 
 //            Assert.assertEquals("MY ACCOUNT", myAccount.getText());
