@@ -43,7 +43,6 @@ public class Day07_C4_Actions2 {
         Thread.sleep(5000);
         driver.findElement(By.linkText("Account")).click();
 
-
 //        Then verify the page title contains “Your Account”
         Assert.assertTrue(driver.getTitle().contains("Your Account"));
     }

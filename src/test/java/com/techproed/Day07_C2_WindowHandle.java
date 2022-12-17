@@ -92,6 +92,6 @@ public void setUp() {
     @After
     public void tearDown(){
    // driver.close();//close only active driver
-     driver.quit();//close all open drivers
+     driver.quit();//close all open automated drivers
     }
 }
